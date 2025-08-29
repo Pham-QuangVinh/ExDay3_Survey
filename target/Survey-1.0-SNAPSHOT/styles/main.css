@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1, h2 {color: teal;}
+label {
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"], input[type="date"]{
+    width: 10em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+br {clear: both;}
+#submit {margin-left: 0.5em;}
+
+form .contactMe{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 50px;
+}
+
+form .contactMe h1{
+    font-size: 18px;
+    height: 25px;
+    width: 50%;
+}
+
+form .contactMe select{
+    font-size: 18px;
+    height: 25px;
+    width: 50%;
+    margin: auto;
+}
+
+form input[type="submit" ]{
+    margin: 10px auto;
+    width: 10%;
+    padding: 10px 15px;
+}

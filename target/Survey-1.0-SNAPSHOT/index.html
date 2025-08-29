@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Servlet and JSP</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<img src="images/murachlogo.jpg" alt="Murach Logo">
+<h1>Survey</h1>
+<p>if your have a moment, we'd appreciate it if you would fill out this survey.</p>
+<form action="survey" method="post">
+    <h2>Your information:</h2>
+    <label>First Name</label>
+    <input type="text" name="firstName" required><br>
+    <label>LastName</label>
+    <input type="text" name="lastName" required><br>
+    <label>Email</label>
+    <input type="email" name="email" required><br>
+    <label for="dod">Day of Birth</label>
+    <input type="date" name="dob" required><br>
+
+    <h2>How did you hear about us?</h2>
+    <p><input type="radio" name="heardFrom" value="Search Engine" checked>Search Engine
+        <input type="radio" name="heardFrom" value="Word of mouth">Word of mouth
+        <input type="radio" name="heardFrom" value="Social Media">Social Media
+        <input type="radio" name="heardFrom" value="Other">Other
+    </p>
+    <h2>Would you like to receive announcements <br />about new CDs and special offers?</h2>
+    <p>
+        <input type="checkbox" name="wantsOffers">YES,I'd like that<br>
+        <input type="checkbox" name="wantsEmail">YES, please send me email announcements
+    </p>
+     <div class="contactMe">
+         <p>Please contact me by:</p>
+         <select name="contact">
+             <option value="BOTH" selected>Email or postal mail </option>
+             <option value="EMAIL">Email only</option>
+             <option value="POSTALMAIL">Postal mail</option>
+         </select><br>
+     </div>
+    <input type="submit" value="Submit" id="submit">
+</form>
+</body>
+</html>
