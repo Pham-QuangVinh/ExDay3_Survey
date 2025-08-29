@@ -16,7 +16,7 @@ FROM tomcat:10.1-jdk21
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy WAR từ stage 1 vào Tomcat
-COPY --from=builder /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=builder /app/target/*.war /usr/local/tomcat/webapps/Survey-1.0-SNAPSHOT.war
 
 # Expose cổng
 EXPOSE 8080
